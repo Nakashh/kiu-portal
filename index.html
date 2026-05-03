@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIU Student Portal — Kutaisi International University</title>
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       HEADER & NAVIGATION
+  ============================ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-brand">
+        <span class="brand-icon">K</span>
+        <span class="brand-text">KIU</span>
+      </div>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#campus">Campus</a></li>
+        <li><a href="#apply" class="nav-cta">Apply Now</a></li>
+      </ul>
+      <!-- Mobile hamburger label (CSS-only toggle) -->
+      <label class="hamburger" for="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         HERO SECTION
+    ============================ -->
+    <section class="hero" id="home" aria-label="Hero banner">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Welcome to</p>
+        <h1 class="hero-title">
+          Kutaisi International<br />
+          <em>University</em>
+        </h1>
+        <p class="hero-subtitle">
+          Where curiosity meets excellence — shaping the innovators,
+          thinkers, and leaders of tomorrow in the heart of Georgia.
+        </p>
+        <div class="hero-actions">
+          <a href="#apply" class="btn btn-primary">Start Your Application</a>
+          <a href="#programs" class="btn btn-ghost">Explore Programs</a>
+        </div>
+        <div class="hero-stats" aria-label="University statistics">
+          <div class="stat">
+            <strong>3000+</strong>
+            <span>Students</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <strong>19</strong>
+            <span>Programs</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <strong>Foreign</strong>
+            <span>Partner Universities</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&auto=format&fit=crop&q=80"
+          alt="Students studying together in a bright, modern university library"
+          class="hero-img"
+          loading="eager"
+        />
+        <div class="hero-img-badge">
+          <span class="badge-year">Est.</span>
+          <strong>2020</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         ABOUT SECTION
+    ============================ -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title" id="about-heading">Built for the Bold</h2>
+        <div class="about-grid">
+          <article class="about-text">
+            <p>
+              Kutaisi International University is a private higher education institution
+              founded with a clear mission: to deliver world-class education in Georgia
+              through innovative teaching, research, and community engagement.
+            </p>
+            <p>
+              Our modern campus in Kutaisi—Georgia's second largest city and ancient
+              capital—offers students a vibrant intellectual and cultural environment,
+              backed by strong ties with European and international partner institutions.
+            </p>
+            <a href="#programs" class="inline-link">Discover our programs →</a>
+          </article>
+          <div class="about-images">
+            <figure class="about-img-card img-card-tall">
+              <img
+                src="https://shorturl.at/gPIQE"
+                alt="Modern university campus building with glass facade and green surroundings"
+                loading="lazy"
+              />
+              <figcaption>Main Campus, Kutaisi</figcaption>
+            </figure>
+            <figure class="about-img-card img-card-short">
+              <img
+                src="https://shorturl.at/oCp4Z"
+                alt="University graduation ceremony with students in caps and gowns"
+                loading="lazy"
+              />
+              <figcaption>Graduation Day 2025</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         PROGRAMS / CARDS SECTION
+    ============================ -->
+    <section class="programs-section" id="programs" aria-labelledby="programs-heading">
+      <div class="container">
+        <div class="section-label">Academics</div>
+        <h2 class="section-title" id="programs-heading">Choose Your Path</h2>
+        <p class="section-desc">
+          Four schools, dozens of degrees — all designed to prepare you for a rapidly changing world.
+        </p>
+        <div class="cards-grid">
+
+          <article class="program-card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Computer Science</h3>
+            <p>AI, software engineering, cybersecurity, and data science — built for tomorrow's tech leaders.</p>
+            <ul class="card-tags">
+              <li>BSc</li><li>4 Years</li>
+            </ul>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon" aria-hidden="true">📊</div>
+            <h3>Management</h3>
+            <p>Finance, marketing, management, and entrepreneurship with real-world industry partnerships.</p>
+            <ul class="card-tags">
+              <li>BSc</li><li>4 Years</li>
+            </ul>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon" aria-hidden="true">⚕️</div>
+            <h3>Medicine</h3>
+            <p>Internationally accredited medical education in English with state-of-the-art simulation labs.</p>
+            <ul class="card-tags">
+              <li>MD</li><li>6 Years</li>
+            </ul>
+          </article>
+
+          <article class="program-card">
+            <div class="card-icon" aria-hidden="true">⚖️</div>
+            <h3>Law</h3>
+            <p>Legal theory, international law, political science, and public policy with moot court practice.</p>
+            <ul class="card-tags">
+              <li>LLB</li><li>4 Years</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SCHEDULE TABLE
+    ============================ -->
+    <section class="schedule-section" id="schedule" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-label">Academic Calendar</div>
+        <h2 class="section-title" id="schedule-heading">2025–2026 Key Dates</h2>
+        <div class="table-wrap" role="region" aria-label="Academic schedule table" tabindex="0">
+          <table class="schedule-table">
+            <caption>KIU Academic Year 2025–2026 Important Dates</caption>
+            <thead>
+              <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Autumn Semester</td>
+                <td><span class="badge-pill">Semester 1</span></td>
+                <td>Sep 15, 2025</td>
+                <td>Dec 31, 2025</td>
+              </tr>
+              <tr>
+                <td>Final Exams (Autumn)</td>
+                <td><span class="badge-pill">Semester 1</span></td>
+                <td>Jan 12, 2026</td>
+                <td>Jan 31, 2026</td>
+              </tr>
+              <tr>
+                <td>Spring Semester</td>
+                <td><span class="badge-pill badge-spring">Semester 2</span></td>
+                <td>Mar 02, 2026</td>
+                <td>Jun 13, 2026</td>
+              </tr>
+              <tr>
+                <td>Final Exams (Spring)</td>
+                <td><span class="badge-pill badge-spring">Semester 2</span></td>
+                <td>Jun 22, 2026</td>
+                <td>Jul 11, 2026</td>
+              </tr>
+              <tr>
+                <td>Internship</td>
+                <td><span class="badge-pill badge-special">Annual</span></td>
+                <td>Mar 02, 2026</td>
+                <td>Sep 12, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CAMPUS / IFRAME SECTION
+    ============================ -->
+    <section class="campus-section" id="campus" aria-labelledby="campus-heading">
+      <div class="container">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title" id="campus-heading">Our Campus</h2>
+        <p class="section-desc">
+          Located in the heart of Kutaisi, Georgia — a UNESCO World Heritage city with deep history and modern ambition.
+        </p>
+        <div class="campus-layout">
+          <div class="campus-info">
+            <div class="info-block">
+              <strong>Address</strong>
+              <p>Youth Avenue, Lane 5/7<br />Kutaisi 4600, Georgia</p>
+            </div>
+            <div class="info-block">
+              <strong>Transport</strong>
+              <p>15 min from David the Builder Kutaisi International Airport (KUT)</p>
+            </div>
+            <div class="info-block">
+              <strong>Contact</strong>
+              <p>info@kiu.edu.ge<br /> (+995) 577 477197</p>
+            </div>
+            <div class="info-block">
+              <strong>Campus Video</strong>
+              <p>Take a virtual tour of KIU:</p>
+              <!-- YouTube embed — KIU official channel -->
+              <div class="video-wrap">
+                <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/3TSlzCQJPGg" 
+                  frameborder="0" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6892.186903832254!2d42.71629916548923!3d42.208819622141746!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1777815840034!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         APPLICATION FORM SECTION
+    ============================ -->
+    <section class="apply-section" id="apply" aria-labelledby="apply-heading">
+      <div class="container">
+        <div class="section-label">Admissions</div>
+        <h2 class="section-title" id="apply-heading">Apply to KIU</h2>
+        <p class="section-desc">
+          Fill in the form below to begin your journey. Our admissions team will contact you within 3 business days.
+        </p>
+
+        <div class="form-wrap">
+          <form class="application-form" action="#" method="post" novalidate aria-label="Student application form">
+
+            <!-- Personal Details -->
+            <fieldset class="form-group">
+              <legend>Personal Information</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="first-name" name="first_name" placeholder="e.g. Ana" required autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="last-name" name="last_name" placeholder="e.g. Beridze" required autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </fieldset>
+
+            <!-- Academic Preferences -->
+            <fieldset class="form-group">
+              <legend>Academic Preferences</legend>
+              <div class="field">
+                <label for="program">Preferred Program <span aria-hidden="true">*</span></label>
+                <select id="program" name="program" required>
+                  <option value="" disabled selected>— Select a School —</option>
+                  <optgroup label="School of Computer Science">
+                    <option value="cs">BSc Computer Science</option>
+                  </optgroup>
+                  <optgroup label="School of Law">
+                    <option value="law">BSc Law</option>
+                  </optgroup>
+                  <optgroup label="School of Management">
+                    <option value="bba">BSc Management</option>
+                  </optgroup>
+                  <optgroup label="School of Medicine">
+                    <option value="nur">BSc Medicine</option>
+                  </optgroup>
+                  <optgroup label="School of Physics">
+                    <option value="phy">BSc Physics</option>
+                  </optgroup>
+                  <optgroup label="School of Architecture">
+                    <option value="arc">BSc Architecture</option>
+                    <option value="des">BDes Design</option>
+                  </optgroup>
+                  <optgroup label="School of Psychology">
+                    <option value="psy">BSc Psychology</option>
+                  </optgroup>
+                  <optgroup label="School of Math">
+                    <option value="mth">BSc Mathematics</option>
+                    <option value="mth_app">BSc Math & Apps: Foundations of AI, Scientific Computing, and Financial Math</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Intake Year</label>
+                <div class="radio-group" role="group" aria-label="Intake year selection">
+                  <label class="radio-label">
+                    <input type="radio" name="intake" value="2025" />
+                    <span>Autumn 2025</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="intake" value="2026" checked />
+                    <span>Spring 2026</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="intake" value="2026b" />
+                    <span>Autumn 2026</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Areas of Interest <small>(select all that apply)</small></label>
+                <div class="checkbox-group" role="group" aria-label="Areas of interest">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="research" />
+                    <span>Research &amp; Innovation</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="exchange" />
+                    <span>Exchange Programs</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="scholarship" />
+                    <span>Scholarships &amp; Aid</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interest" value="sports" />
+                    <span>Sports &amp; Activities</span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Motivation Letter -->
+            <fieldset class="form-group">
+              <legend>Motivation Letter</legend>
+              <div class="field">
+                <label for="motivation">Tell us about yourself <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="motivation"
+                  name="motivation"
+                  rows="6"
+                  placeholder="Describe your academic interests, career goals, and why you want to join KIU..."
+                  required
+                  minlength="100"
+                ></textarea>
+                <small class="field-hint">Minimum 100 characters. Be genuine!</small>
+              </div>
+            </fieldset>
+
+            <div class="form-footer">
+              <p class="form-privacy">
+                By submitting, you agree to KIU's
+                <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+              </p>
+              <button type="submit" class="btn btn-primary btn-submit">
+                Submit Application
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  ============================ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <span class="brand-icon">K</span>
+          <span class="brand-text">KIU</span>
+        </div>
+        <p>Kutaisi International University — empowering minds, building futures.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <strong>Quick Links</strong>
+        <ul role="list">
+          <li><a href="#about">About KIU</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#schedule">Calendar</a></li>
+          <li><a href="#apply">Apply</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav" aria-label="Student services navigation">
+        <strong>Student Services</strong>
+        <ul role="list">
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Career Center</a></li>
+          <li><a href="#">Accommodation</a></li>
+          <li><a href="#">Student Council</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <strong>Contact</strong>
+        <address>
+          Akhalgazrdoba Ave. Lane 5/7,
+          Kutaisi, 4600 Georgia<br />
+          <a href="mailto:info@kiu.edu.ge">info@kiu.edu.ge</a><br />
+          <a href="tel:(+995) 577 477197">(+995) 577 477197</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kutaisi International University. All rights reserved.</p>
+      <p>Built for KIU Scripting — Midterm Project</p>
+    </div>
+  </footer>
+
+</body>
+</html>
